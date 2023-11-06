@@ -4,24 +4,25 @@ main(_) ->
     io:setopts([{encoding, unicode}]),
     Status = os:cmd("xkb-switch"),
     Layout = string:trim(Status, both, "\n"),
-    change_layout(Layout),
+    NLayout = change_layout(Layout),
+    print_layout(NLayout),
     0.
 
 %%--------------------------------------------------------------------
 %% @doc
 %% @end
 -spec change_layout(Layout :: nonempty_string()) ->
-    ok.
+    NLayout :: nonempty_string().
 %%--------------------------------------------------------------------
 change_layout("us") ->
     Layout = "ru",
     process_layout(Layout),
-    ok;
+    Layout;
 
 change_layout("ru") ->
     Layout = "us",
     process_layout(Layout),
-    ok.
+    Layout.
 %%--------------------------------------------------------------------
 
 %%--------------------------------------------------------------------
@@ -31,8 +32,7 @@ change_layout("ru") ->
     ok.
 %%--------------------------------------------------------------------
 process_layout(Layout) ->
-    exec_change_layout(Layout),
-    print_layout(Layout).
+    exec_change_layout(Layout).
 %%--------------------------------------------------------------------
 
 %%--------------------------------------------------------------------

@@ -217,9 +217,8 @@ bar {
     id bar-0
     position top
     output $monitor_primary
-    #tray_output $monitor_primary
     font pango:BabelStone Flags:style=Regular 10
-    status_command exec i3blocks -c ~/.config/i3blocks/config
+    status_command i3blocks -c ~/.config/i3blocks/config
 }
 
 bar {
@@ -227,7 +226,6 @@ bar {
     position top
     output $monitor_secondary
     tray_output none
-    #status_command exec echo " "
 }
 
 # layout switch

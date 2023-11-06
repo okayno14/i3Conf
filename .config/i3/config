@@ -195,13 +195,39 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Workspace-Monitor Mapping
+set $monitor_primary Virtual1
+set $monitor_secondary Virtual2
+
+workspace 1 output $monitor_primary
+workspace 2 output $monitor_primary
+workspace 3 output $monitor_primary
+
+workspace 4 output $monitor_secondary
+workspace 5 output $monitor_secondary
+workspace 6 output $monitor_secondary
+workspace 7 output $monitor_secondary
+workspace 8 output $monitor_secondary
+workspace 9 output $monitor_secondary
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
 
-        font pango:BabelStone Flags:style=Regular 10
-        #tray_output primary
-        status_command i3blocks
+bar {
+    id bar-0
+    position top
+    output $monitor_primary
+    #tray_output $monitor_primary
+    font pango:BabelStone Flags:style=Regular 10
+    status_command exec i3blocks -c ~/.config/i3blocks/config
+}
+
+bar {
+    id bar-1
+    position top
+    output $monitor_secondary
+    tray_output none
+    #status_command exec echo " "
 }
 
 #exec "setxkbmap -layout us"

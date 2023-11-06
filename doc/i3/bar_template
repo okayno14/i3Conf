@@ -1,0 +1,35 @@
+bar {
+    id
+    position bottom
+    output all
+    tray_output
+    mode dock
+
+    tray_padding 2
+    separator_symbol "|"
+
+    font pango:DejaVu Sans Mono 8
+
+    colors {
+        <color> #rrggbb
+        background <color>
+        statusline <color>
+        separator <color>
+
+        <colorclass> <border> <background> <text>
+        focused_workspace  <color> <color> <color>
+        active_workspace   <color> <color> <color>
+        inactive_workspace <color> <color> <color>
+        urgent_workspace   <color> <color> <color>
+        binding_mode       <color> <color> <color>
+    }
+
+    workspace_min_width 40
+    workspace_buttons yes
+    strip_workspace_numbers yes
+    binding_mode_indicator yes
+
+    i3bar_command
+    status_command
+    workspace_command
+}

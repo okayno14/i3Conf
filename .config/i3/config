@@ -230,6 +230,7 @@ bar {
     #status_command exec echo " "
 }
 
-#exec "setxkbmap -layout us"
+# layout switch
+exec "setxkbmap -layout us"
 bindsym Mod4+space exec "pkill -SIGRTMIN+2 i3blocks"
 

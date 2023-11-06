@@ -133,7 +133,6 @@ interval=5
 
 [key_layout]
 command='ch_layout_handler.escript'
-label='Lang:'
 interval=once
 signal=2
 

@@ -224,6 +224,5 @@ bar {
 }
 
 # layout switch
-exec "setxkbmap -layout us"
-bindsym Mod4+space exec "pkill -SIGRTMIN+2 i3blocks"
+exec setxkbmap -layout us,ru -option grp:win_space_toggle
 

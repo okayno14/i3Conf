@@ -4,6 +4,7 @@
 
 * compton (apt)
 * xkb-switch (github)
+* rofi
 
 ## Fonts
 

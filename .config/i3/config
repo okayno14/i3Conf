@@ -226,3 +226,5 @@ bar {
 # layout switch
 exec setxkbmap -layout us,ru -option grp:win_space_toggle
 
+exec ~/.fehbg
+

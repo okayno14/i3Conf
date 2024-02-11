@@ -133,3 +133,12 @@ interval=5
 command='ch_layout_handler.escript'
 interval=1
 
+[dunst]
+command=dunst_widget
+interval=once
+format=json
+markup=pango
+#min_width=50
+#align=center
+
+

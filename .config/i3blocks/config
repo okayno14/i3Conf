@@ -130,11 +130,11 @@ interval=5
 #interval=10
 
 [key_layout]
-command='ch_layout_handler.escript'
+command=.i3blocks/blocklet/ch_layout_handler.escript
 interval=1
 
 [dunst]
-command=dunst_widget
+command=.i3blocks/blocklet/dunst
 interval=once
 format=json
 markup=pango

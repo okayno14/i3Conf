@@ -7,7 +7,7 @@ if [ -d "$OUT" ]; then
 fi
 mkdir "$OUT"
 
-cp -r .config out/
-cp -r -L .local out/
-cp .fehbg out/
+cp -r .config "$OUT"
+cp -r -L .local "$OUT"
+cp .fehbg "$OUT"
 

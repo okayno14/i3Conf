@@ -196,6 +196,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# other bindings
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+
 # Workspace-Monitor Mapping
 set $monitor_primary Virtual1
 set $monitor_secondary Virtual2
@@ -219,6 +222,7 @@ bar {
     position top
     output $monitor_primary
     font pango:BabelStone Flags:style=Regular 10
+
     status_command i3blocks -c ~/.config/i3blocks/config
 }
 

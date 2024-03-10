@@ -1,4 +1,7 @@
-# Swap
+out/
+
+# vim
+# vim.swap
 [._]*.s[a-v][a-z]
 !*.svg  # comment out if you don't need vector files
 [._]*.sw[a-p]
@@ -6,14 +9,13 @@
 [._]ss[a-gi-z]
 [._]sw[a-p]
 
-# Session
+# vim.session
 Session.vim
 Sessionx.vim
 
-# Temporary
+# vim.temporary
 .netrwhist
 *~
-# Auto-generated tag files
 tags
-# Persistent undo
 [._]*.un~
+

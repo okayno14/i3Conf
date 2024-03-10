@@ -9,3 +9,5 @@ mkdir "$OUT"
 
 cp -r .config out/
 cp -r -L .local out/
+cp .fehbg out/
+

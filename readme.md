@@ -1,22 +1,14 @@
-# Resources
+# Deploy
 
-## Packages
+1. `git submodule update --init`
+2. `./build.sh`
+3. Set up `$monitor_primary`, `$monitor_secondary` in out/.config/i3/config
 
-* compton (apt)
-* feh
-* i3
-* i3blocks
-* rofi
-* xkb-switch (github)
+# Configuration
 
-## Fonts
-
-* BabelStone Flags:style=Regular
-
-# Wallpaper
+## Wallpaper
 
 Default wallpaper path:
 
     ~/Pictures/wallpaer
-
 

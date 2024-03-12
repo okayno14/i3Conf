@@ -92,7 +92,7 @@ min_width=CPU: 100.00%
 # Date Time
 [time]
 command=date '+%Y-%m-%d %H:%M:%S'
-interval=5
+interval=1
 
 # OpenVPN support
 #

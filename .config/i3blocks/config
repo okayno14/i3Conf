@@ -29,12 +29,9 @@ separator_block_width=15
 markup=none
 
 [window_title]
-label=test
-align=center
-interval=once
+interval=persist
 command=.local/lib/i3blocks/blocklets/title.sh
 separator=true
-format=json
 
 [i3_layout]
 command=.local/lib/i3blocks/blocklets/i3_layout.sh

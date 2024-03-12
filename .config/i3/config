@@ -39,6 +39,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+default_border pixel 0
+
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && pkill --signal SIGRTMIN+10 i3blocks
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && pkill --signal SIGRTMIN+10 i3blocks
@@ -210,7 +212,7 @@ bar {
     id bar-0
     position top
     output $monitor_primary
-    font pango:BabelStone Flags:style=Regular 10
+    font pango:BabelStone Flags:style=Regular 12
 
     status_command i3blocks -c ~/.config/i3blocks/config
 }

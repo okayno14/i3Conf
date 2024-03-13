@@ -221,6 +221,7 @@ bar {
     id bar-1
     position top
     output $monitor_secondary
+    font pango:BabelStone Flags:style=Regular 12
     tray_output none
 }
 

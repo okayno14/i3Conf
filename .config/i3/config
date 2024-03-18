@@ -150,6 +150,13 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
+# application-workspace mapping
+assign [class="vivaldi-stable"] $ws5
+assign [class="discord"] $ws9
+assign [class="ecss-elph"] $ws9
+assign [class="thunderbird"] $ws9
+assign [class="telegram-desktop"] $ws9
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)

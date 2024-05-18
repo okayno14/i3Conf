@@ -59,6 +59,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec "rofi -show drun -show-icons"
+bindsym Mod1+Tab exec "rofi -show window -show-icons"
 
 # change focus
 #bindsym $mod+j focus left

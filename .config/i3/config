@@ -216,8 +216,8 @@ bar {
     position top
     output $monitor_primary
     font pango:BabelStone Flags:style=Regular 12
-
     status_command i3blocks -c ~/.config/i3blocks/config
+#      status_command 2>/tmp/i3blocks.err i3blocks -c ~/.config/i3blocks/config -vv
 }
 
 bar {

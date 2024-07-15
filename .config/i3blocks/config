@@ -112,8 +112,7 @@ signal=10
 
 [key_layout]
 command=.local/lib/i3blocks/blocklets/ch_layout_handler.escript
-interval=once
-signal=12
+interval=1
 
 #  [dunst]
 #  command=.local/lib/i3blocks/blocklets/dunst

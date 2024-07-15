@@ -28,26 +28,36 @@ command=/usr/share/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[i3_layout]
+command=.local/lib/i3blocks/blocklets/i3_layout.sh
+interval=1
+
 [window_title]
 interval=persist
 command=.local/lib/i3blocks/blocklets/title.sh
 separator=true
 
-[i3_layout]
-command=.local/lib/i3blocks/blocklets/i3_layout.sh
-interval=1
-
-# Volume indicator
+# Network interface monitoring
 #
-# The first parameter sets the step (and units to display)
-# The second parameter overrides the mixer selection
-# See the script for details.
-[volume]
-label=♪
-instance=Master
-#instance=PCM
-interval=once
-signal=10
+# If the instance is not specified, use the interface used for default route.
+# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
+[iface]
+color=#00FF00
+interval=10
+separator=true
+
+#  [bandwidth]
+#instance=eth0
+#  interval=5
+
+# CPU usage
+#
+# The script may be called with -w and -c switches to specify thresholds,
+# see the script for details.
+[cpu_usage]
+label=CPU
+interval=10
+min_width=CPU: 100.00%
 
 # Memory usage
 #
@@ -60,31 +70,8 @@ interval=30
 [memory]
 label=SWAP
 instance=swap
-separator=false
-interval=30
-
-# Network interface monitoring
-#
-# If the instance is not specified, use the interface used for default route.
-# The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
-[iface]
-#instance=wlan0
-color=#00FF00
-interval=10
 separator=true
-
-[bandwidth]
-#instance=eth0
-interval=5
-
-# CPU usage
-#
-# The script may be called with -w and -c switches to specify thresholds,
-# see the script for details.
-[cpu_usage]
-label=CPU
-interval=10
-min_width=CPU: 100.00%
+interval=30
 
 # Date Time
 [time]
@@ -111,14 +98,26 @@ instance=CAPS
 interval=once
 signal=11
 
+# Volume indicator
+#
+# The first parameter sets the step (and units to display)
+# The second parameter overrides the mixer selection
+# See the script for details.
+[volume]
+label=♪
+instance=Master
+#instance=PCM
+interval=once
+signal=10
+
 [key_layout]
 command=.local/lib/i3blocks/blocklets/ch_layout_handler.escript
 interval=once
 signal=12
 
-[dunst]
-command=.local/lib/i3blocks/blocklets/dunst
-interval=once
-format=json
-markup=pango
+#  [dunst]
+#  command=.local/lib/i3blocks/blocklets/dunst
+#  interval=once
+#  format=json
+#  markup=pango
 

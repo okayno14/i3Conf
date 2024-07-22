@@ -75,7 +75,7 @@ interval=30
 
 # Date Time
 [time]
-command=date '+w:%W %d/%m/%Y %H:%M:%S'
+command=.local/lib/i3blocks/blocklets/calendar.sh
 interval=1
 
 # Temperature

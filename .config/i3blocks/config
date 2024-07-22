@@ -111,7 +111,8 @@ interval=once
 signal=10
 
 [key_layout]
-command=.local/lib/i3blocks/blocklets/ch_layout_handler.escript
+# ОБЯЗАТЕЛЬНО ОТВЯЗЫВАТЬ STDIN, это баг i3blocks (https://github.com/vivien/i3blocks/issues/288)
+command=.local/lib/i3blocks/blocklets/ch_layout_handler.escript </dev/null
 interval=1
 
 #  [dunst]

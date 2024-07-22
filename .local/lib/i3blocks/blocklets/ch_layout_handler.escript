@@ -9,6 +9,8 @@
 main(_) ->
     io:setopts([{encoding, unicode}]),
     print_layout(get_current_layout()),
+    io:format("~n", []),
+    io:format("~n", []),
     0.
 %%--------------------------------------------------------------------
 

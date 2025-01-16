@@ -234,4 +234,5 @@ bar {
 exec setxkbmap -layout us,ru -option grp:win_space_toggle
 
 exec ~/.fehbg
+exec ksnip
 

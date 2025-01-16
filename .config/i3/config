@@ -154,6 +154,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # application-workspace mapping
 assign [class="vivaldi-stable"] $ws5
 assign [class="discord"] $ws9
+assign [class="mattermost"] $ws9
 assign [class="ecss-elph"] $ws9
 assign [class="thunderbird"] $ws9
 assign [class="telegram-desktop"] $ws9
